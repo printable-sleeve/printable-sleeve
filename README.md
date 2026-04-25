@@ -103,8 +103,8 @@ Set `RENDER = "..."` → **Design → Export → Export as STL**
 | `"shell"` | PETG | ~90 min |
 | `"cap"` | PETG | ~60 min |
 | `"plug"` | TPU | ~15 min |
-| `"inlay"` | TPU | ~35 min |
-| `"cushion"` | TPU | ~25 min (optional) |
+| `"inlay"` | TPU | ~120 min |
+| `"cushion"` | TPU | ~60 min (optional) |
 
 Use `RENDER = "all"` to preview all parts together (not for printing).
 
@@ -141,7 +141,7 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 
 | Setting | Location | Value |
 |---|---|---|
-| Layer height | Quality | 0.15 mm |
+| Layer height | Quality | 0.20 mm |
 | Seam position | Quality | Nearest |
 | Wall order | Quality → Advanced | outer/inner |
 | **Avoid crossing walls** | Quality → Advanced | **ON** ← critical |
