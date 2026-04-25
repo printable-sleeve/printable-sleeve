@@ -1,4 +1,4 @@
-# printable-sleeve
+# PRINTABLE-SLEEVE
 
 **Open Source Sexual Wellness Device — CC BY-SA 4.0**
 
