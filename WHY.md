@@ -83,7 +83,7 @@ sell prints of it — as long as you keep it open under the same terms.
 Two things made this possible:
 
 **Bambu Lab (2022–2024)** democratised FDM printing. A machine that
-produces reliable, accurate prints at 15 mm/s in TPU now costs under €300.
+produces reliable, accurate prints at 15 mm/s in TPU now costs under €200.
 That did not exist five years ago.
 
 **OpenSCAD + BOSL2** makes the design fully parametric. One number —
