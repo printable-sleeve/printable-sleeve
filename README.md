@@ -82,10 +82,10 @@ Set `RENDER = "..."` → **Design → Export → Export as STL**
 | RENDER | Material | Print time |
 |---|---|---|
 | `"shell"` | PETG | ~90 min |
-| `"cap"` | PETG | ~45 min |
+| `"cap"` | PETG | ~60 min |
 | `"plug"` | TPU | ~15 min |
-| `"inlay"` | TPU | ~35 min |
-| `"cushion"` | TPU | ~25 min (optional) |
+| `"inlay"` | TPU | ~120 min |
+| `"cushion"` | TPU | ~60 min (optional) |
 
 Use `RENDER = "all"` to preview all parts together (not for printing).
 
