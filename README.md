@@ -43,11 +43,17 @@ from all sides and holds the inlay in place.
 ## Step 1 — Measure yourself
 
 Wrap a soft tape around your shaft. Note the girth in mm.
-Divide by 3.14 → that is your diameter.
+Divide by 3.14 → that is your diameter. Enter it as `BORE_D`.
 
 **Example:** 124 mm girth ÷ 3.14 = **39.5 mm**
 
-You will enter this value as `BORE_D` in the file.
+> **Note:** `BORE_D` sets the housing size, not the inlay bore directly.  
+> The actual bore inside the inlay is always approximately:  
+> **BORE_D − (2 × WALL_T − 4.6)**  
+> With defaults (WALL_T = 5.5): **BORE_D − 6.4 mm**  
+> Example: BORE_D 39.5 → actual bore ≈ **33.1 mm**  
+> TPU Shore 95A stretches to accommodate — this is intentional.  
+> Reduce WALL_T for a looser fit, increase for a tighter one.
 
 ---
 
