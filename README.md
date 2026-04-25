@@ -116,10 +116,10 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 | Setting | Tab | Value |
 |---|---|---|
 | Nozzle | Temperature | 225°C |
-| Bed | Temperature | 20–30°C, smooth PEI |
-| **Retraction length** | Retraction | **0 mm** ← critical |
+| Bed | Temperature | 30°C, smooth PEI |
+| **Retraction length** | Retraction | **0.4 mm** ← critical |
 | Flow rate | Advanced | 95% |
-| Max volumetric speed | Advanced | 2.0 mm³/s |
+| Max volumetric speed | Advanced | 1.5 mm³/s |
 | AMS Lite | — | **DO NOT USE** — external spool only |
 
 **Process profile:**
