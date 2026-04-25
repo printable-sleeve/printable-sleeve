@@ -12,7 +12,7 @@ include <BOSL2/threading.scad>
 
    WHAT IT IS:
      A parametric, vacuum-enabled masturbation sleeve for FDM 3D printing.
-     Two materials. Four parts. No proprietary components required.
+     Two materials. Five parts. No proprietary components required.
      Designed to be printed at home, privately, at minimal cost.
 
    PARTS:
