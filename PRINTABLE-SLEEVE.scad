@@ -6,8 +6,9 @@ include <BOSL2/threading.scad>
    ============================================================================
    License  : CC BY-SA 4.0
    Project  : https://github.com/printable-sleeve
-   Author   : printable-sleeve
+   Author   : uknawn
    Printer  : Bambu Lab A1 Mini (settings below)
+   Support  : https://buymeacoffee.com/uknawn
 
    WHAT IT IS:
      A parametric, vacuum-enabled masturbation sleeve for FDM 3D printing.
