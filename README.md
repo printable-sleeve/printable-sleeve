@@ -245,3 +245,7 @@ any new parameters in the file header and in this README.
 
 *printable-sleeve — Open Source Sexual Wellness*
 *https://github.com/printable-sleeve*
+
+---
+
+https://buymeacoffee.com/uknawn
