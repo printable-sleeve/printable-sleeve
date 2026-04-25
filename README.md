@@ -2,11 +2,31 @@
 
 **Open Source Sexual Wellness Device**
 
-A parametric, vacuum-enabled masturbation sleeve for FDM 3D printing. Two materials. 
+A parametric, vacuum-enabled masturbation sleeve for FDM 3D printing. Two materials.
 Five parts. No proprietary components. Fully open source.
 
 > ⚠️ **Adult use only.** This project contains technical documentation
 > for a personal wellness device intended for adults.
+
+→ [Why this project exists](WHY.md)
+
+---
+
+## Download ready-to-print STL files
+
+Pre-rendered for four standard sizes. All parts per size are matched and fit together.
+
+| Size | BORE_D | Girth | Files |
+|---|---|---|---|
+| **S** | 35.0 mm | ~110 mm | shell_S, cap_S, plug_S, inlay_S, cushion_S |
+| **M** | 38.0 mm | ~119 mm | shell_M, cap_M, plug_M, inlay_M, cushion_M |
+| **L** | 41.0 mm | ~129 mm | shell_L, cap_L, plug_L, inlay_L, cushion_L |
+| **XL** | 44.0 mm | ~138 mm | shell_XL, cap_XL, plug_XL, inlay_XL, cushion_XL |
+
+Download all STLs from the [Releases page](https://github.com/printable-sleeve/printable-sleeve/releases).
+
+Not sure which size? Wrap a soft tape around your shaft, note the girth in mm, divide by 3.14.
+Pick the size closest to your result. TPU stretches slightly — when between sizes, go smaller.
 
 ---
 
@@ -40,24 +60,21 @@ from all sides and holds the inlay in place.
 
 ---
 
-## Step 1 — Measure yourself
+## Custom size — build from source
+
+### Step 1 — Measure yourself
 
 Wrap a soft tape around your shaft. Note the girth in mm.
 Divide by 3.14 → that is your diameter. Enter it as `BORE_D`.
 
 **Example:** 124 mm girth ÷ 3.14 = **39.5 mm**
 
-> **Note:** `BORE_D` sets the housing size, not the inlay bore directly.  
-> The actual bore inside the inlay is always approximately:  
-> **BORE_D − (2 × WALL_T − 4.6)**  
-> With defaults (WALL_T = 5.5): **BORE_D − 6.4 mm**  
-> Example: BORE_D 39.5 → actual bore ≈ **33.1 mm**  
-> TPU Shore 95A stretches to accommodate — this is intentional.  
-> Reduce WALL_T for a looser fit, increase for a tighter one.
+> **Note:** `BORE_D` sets the housing size, not the inlay bore directly.
+> The actual bore inside the inlay is approximately `BORE_D − 6.4 mm` with default settings.
+> TPU Shore 95A stretches to accommodate — this is intentional.
+> Reduce `WALL_T` for a looser fit, increase for firmer.
 
----
-
-## Step 2 — Install BOSL2
+### Step 2 — Install BOSL2
 
 1. [Download BOSL2](https://github.com/BelfrySCAD/BOSL2/archive/refs/heads/master.zip)
 2. Unzip, rename the folder to `BOSL2`
@@ -66,22 +83,18 @@ Divide by 3.14 → that is your diameter. Enter it as `BORE_D`.
    - **Linux:** `~/.local/share/OpenSCAD/libraries/`
    - **Mac:** `~/Documents/OpenSCAD/libraries/`
 
----
+### Step 3 — Customise the file
 
-## Step 3 — Customise the file
-
-Open `printable-sleeve.scad` in OpenSCAD. Change these values near the top:
+Open `PRINTABLE-SLEEVE.scad` in OpenSCAD. Change these values near the top:
 
 ```openscad
-BORE_D      = 39.5;  // ← your diameter (girth ÷ 3.14)
-SHRINK_COMP = 1.00;  // ← start here, tune if inlay is too loose or tight
-WALL_T      = 5.5;   // ← wall thickness (increase for firmer feel)
-SHELL_LENGTH = 100.0; // ← 80 / 100 / 120 mm
+BORE_D       = 39.5;   // ← your diameter (girth ÷ 3.14)
+SHRINK_COMP  = 1.00;   // ← start here, tune if inlay is too loose or tight
+WALL_T       = 5.5;    // ← wall thickness (increase for firmer feel)
+SHELL_LENGTH = 100.0;  // ← 80 / 100 / 120 mm
 ```
 
----
-
-## Step 4 — Export each part as STL
+### Step 4 — Export each part as STL
 
 Set `RENDER = "..."` → **Design → Export → Export as STL**
 
@@ -90,14 +103,14 @@ Set `RENDER = "..."` → **Design → Export → Export as STL**
 | `"shell"` | PETG | ~90 min |
 | `"cap"` | PETG | ~60 min |
 | `"plug"` | TPU | ~15 min |
-| `"inlay"` | TPU | ~120 min |
-| `"cushion"` | TPU | ~60 min (optional) |
+| `"inlay"` | TPU | ~35 min |
+| `"cushion"` | TPU | ~25 min (optional) |
 
 Use `RENDER = "all"` to preview all parts together (not for printing).
 
 ---
 
-## Step 5 — Print settings
+## Print settings
 
 ### PETG — shell + cap
 
@@ -115,32 +128,35 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 
 | Setting | Tab | Value |
 |---|---|---|
-| Nozzle | Temperature | 225°C |
-| Bed | Temperature | 30°C, smooth PEI |
-| **Retraction length** | Retraction | **0.4 mm** ← critical |
+| Nozzle | Temperature | 230–235°C |
+| Bed | Temperature | 35–45°C, smooth PEI |
+| **Retraction length** | Retraction | **0 mm** ← critical |
 | Flow rate | Advanced | 95% |
-| Max volumetric speed | Advanced | 1.5 mm³/s |
+| Max volumetric speed | Advanced | 2.0 mm³/s |
+| Wall lines | Strength | 2 |
+| Infill density | Strength | 10% gyroid |
 | AMS Lite | — | **DO NOT USE** — external spool only |
 
 **Process profile:**
 
 | Setting | Location | Value |
 |---|---|---|
-| Layer height | Quality | 0.2 mm |
+| Layer height | Quality | 0.15 mm |
 | Seam position | Quality | Nearest |
 | Wall order | Quality → Advanced | outer/inner |
 | **Avoid crossing walls** | Quality → Advanced | **ON** ← critical |
-| Outer wall speed | Speed | 80 mm/s |
-| Inner wall speed | Speed | 80 mm/s |
-| Surface speed | Speed | 80 mm/s |
+| Outer wall speed | Speed | 15 mm/s |
+| Inner wall speed | Speed | 20 mm/s |
+| Surface speed | Speed | 15 mm/s |
+| Reduce infill retraction | Other → G-Code | ON |
 
 **Printer settings** (printer profile → Extruder tab):
 
 | Setting | Value |
 |---|---|
-| Retraction length | 0.4 mm |
+| Retraction length | 0 mm |
 | Z-hop | 0.2 mm |
-| Retraction/feed speed | 30 mm/s |
+| Retraction/feed speed | 15 mm/s |
 
 > **Air cushion only:** set infill to **0%** and top/bottom layers to **4**.
 
@@ -155,7 +171,7 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 
 ---
 
-## Step 6 — Assembly
+## Assembly
 
 1. (Optional) Push air cushion ring into shell bore
 2. Push inlay into shell from front until it seats on the rim
@@ -164,7 +180,7 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 
 ---
 
-## Step 7 — Use
+## Use
 
 - **Water-based lubricant only** — silicone lubricant degrades TPU
 - Condom recommended (improves hygiene and feel)
@@ -209,7 +225,7 @@ Takes 2–3 minutes. Removes seam ridges for a smoother surface.
 |---|---|
 | Inlay too loose in shell | Increase `SHRINK_COMP` by 0.005 |
 | Inlay won't fit in shell | Decrease `SHRINK_COMP` by 0.005 |
-| Stringing inside bore | Retraction OFF + Avoid crossing walls ON |
+| Stringing inside bore | Retraction 0 mm + Avoid crossing walls ON |
 | Surface bumps inside bore | Flow rate 92%, speed 12 mm/s |
 | Vacuum won't hold | Push plug in further, tighten cap |
 
