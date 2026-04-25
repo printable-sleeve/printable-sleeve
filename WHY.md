@@ -122,3 +122,7 @@ That is how open source works.
 
 *printable-sleeve — Open Source Sexual Wellness*
 *CC BY-SA 4.0 — https://github.com/printable-sleeve*
+
+---
+
+❤️ https://buymeacoffee.com/uknawn
