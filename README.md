@@ -23,7 +23,7 @@ Pre-rendered for four standard sizes. All parts per size are matched and fit tog
 | **L** | 41.0 mm | ~129 mm | shell_L, cap_L, plug_L, inlay_L, cushion_L |
 | **XL** | 44.0 mm | ~138 mm | shell_XL, cap_XL, plug_XL, inlay_XL, cushion_XL |
 
-Download all STLs from the [Releases page](https://github.com/printable-sleeve/printable-sleeve/tree/main/files).
+Download all STLs from the [Files page](https://github.com/printable-sleeve/printable-sleeve/tree/main/files).
 
 Not sure which size? Wrap a soft tape around your shaft, note the girth in mm, divide by 3.14.
 Pick the size closest to your result. TPU stretches slightly — when between sizes, go smaller.
