@@ -2,8 +2,8 @@
 
 **Open Source Sexual Wellness Device**
 
-A parametric, vacuum-enabled masturbation sleeve for FDM 3D printing.
-Two materials. Five parts. No proprietary components. Fully open source.
+A parametric, vacuum-enabled masturbation sleeve for FDM 3D printing. Two materials. 
+Five parts. No proprietary components. Fully open source.
 
 > ⚠️ **Adult use only.** This project contains technical documentation
 > for a personal wellness device intended for adults.
