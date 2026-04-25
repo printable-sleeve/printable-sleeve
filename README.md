@@ -130,7 +130,7 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 |---|---|---|
 | Nozzle | Temperature | 225°C |
 | Bed | Temperature | 30°C, smooth PEI |
-| **Retraction length** | Retraction | **0 mm** ← critical |
+| **Retraction length** | Retraction | **0.4 mm** ← critical |
 | Flow rate | Advanced | 95% |
 | Max volumetric speed | Advanced | 1.5 mm³/s |
 | Wall lines | Strength | 2 |
@@ -154,7 +154,7 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 
 | Setting | Value |
 |---|---|
-| Retraction length | 0 mm |
+| Retraction length | 0.4 mm |
 | Z-hop | 0.2 mm |
 | Retraction/feed speed | 30 mm/s |
 
