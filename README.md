@@ -252,6 +252,12 @@ Full text: https://creativecommons.org/licenses/by-sa/4.0/
 
 ---
 
+## Disclaimer
+
+This project is provided as-is for educational and personal use.This device has not been tested, certified, or approved by any medical or regulatory body. The authors make no warranties regarding safety, fitness for purpose, or material compatibility. You are solely responsible for the materials you use, the quality of your print, and how you use the device. Use body-safe, phthalate-free TPU from a reputable supplier — the authors cannot verify third-party materials. If you experience any discomfort, discontinue use immediately. This project is not a medical device. By downloading, printing, or using this design you accept full responsibility for your own safety.
+
+---
+
 ## Contributing
 
 Pull requests welcome. Please keep changes parametric and document
