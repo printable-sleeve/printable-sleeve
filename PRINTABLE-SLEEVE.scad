@@ -46,32 +46,32 @@ include <BOSL2/threading.scad>
      AMS                    : compatible
 
    TPU Shore 95A (inlay + plug + cushion):
-     Nozzle temperature     : 230–235°C
-     Bed temperature        : 35–45°C, smooth PEI plate
-     Layer height           : 0.15mm  (smoother inner surface)
+     Nozzle temperature     : 225°C
+     Bed temperature        : 30°C, smooth PEI plate
+     Layer height           : 0.2mm  (smoother inner surface)
      Wall lines             : 2
      Infill density         : 10% gyroid
      AMS Lite               : DO NOT USE — feed from external spool only
                               TPU jams the AMS Lite hub reliably
 
    FILAMENT PROFILE (left sidebar → filament → pencil icon):
-     Retraction length      : 0 mm  ← CRITICAL — TPU strings with retraction
+     Retraction length      : 0.4 mm
      Flow rate              : 95%   ← compensates TPU over-extrusion
-     Max volumetric speed   : 2.0 mm³/s  ← prevents pressure spikes
+     Max volumetric speed   : 1.5 mm³/s  ← prevents pressure spikes
 
    PROCESS PROFILE (right sidebar → Process):
      Seam position          : Nearest
      Wall order             : outer/inner
      Avoid crossing walls   : ON  ← CRITICAL — prevents stringing
-     Outer wall speed       : 15 mm/s
-     Inner wall speed       : 20 mm/s
-     Surface speed          : 15 mm/s
+     Outer wall speed       : 80 mm/s
+     Inner wall speed       : 80 mm/s
+     Surface speed          : 80 mm/s
      Reduce infill retract  : ON
 
    PRINTER SETTINGS (printer profile → Extruder tab):
-     Retraction length      : 0 mm
+     Retraction length      : 0.4 mm
      Z-hop on retract       : 0.2 mm
-     Retraction speed       : 15 mm/s
+     Retraction speed       : 30 mm/s
 
    AIR CUSHION (RENDER = "cushion") — special settings:
      Infill density         : 0%  ← hollow = the function
