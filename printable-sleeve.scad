@@ -6,7 +6,7 @@ include <BOSL2/threading.scad>
    ============================================================================
    License  : CC BY-SA 4.0
    Project  : https://github.com/printable-sleeve
-   Author   : Open Source Community
+   Author   : printable-sleeve
    Printer  : Bambu Lab A1 Mini (settings below)
 
    WHAT IT IS:
