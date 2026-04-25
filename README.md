@@ -115,8 +115,8 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 
 | Setting | Tab | Value |
 |---|---|---|
-| Nozzle | Temperature | 230–235°C |
-| Bed | Temperature | 35–45°C, smooth PEI |
+| Nozzle | Temperature | 225°C |
+| Bed | Temperature | 20–30°C, smooth PEI |
 | **Retraction length** | Retraction | **0 mm** ← critical |
 | Flow rate | Advanced | 95% |
 | Max volumetric speed | Advanced | 2.0 mm³/s |
@@ -126,21 +126,21 @@ Use `RENDER = "all"` to preview all parts together (not for printing).
 
 | Setting | Location | Value |
 |---|---|---|
-| Layer height | Quality | 0.15 mm |
+| Layer height | Quality | 0.2 mm |
 | Seam position | Quality | Nearest |
 | Wall order | Quality → Advanced | outer/inner |
 | **Avoid crossing walls** | Quality → Advanced | **ON** ← critical |
-| Outer wall speed | Speed | 15 mm/s |
-| Inner wall speed | Speed | 20 mm/s |
-| Surface speed | Speed | 15 mm/s |
+| Outer wall speed | Speed | 80 mm/s |
+| Inner wall speed | Speed | 80 mm/s |
+| Surface speed | Speed | 80 mm/s |
 
 **Printer settings** (printer profile → Extruder tab):
 
 | Setting | Value |
 |---|---|
-| Retraction length | 0 mm |
+| Retraction length | 0.4 mm |
 | Z-hop | 0.2 mm |
-| Retraction/feed speed | 15 mm/s |
+| Retraction/feed speed | 30 mm/s |
 
 > **Air cushion only:** set infill to **0%** and top/bottom layers to **4**.
 
