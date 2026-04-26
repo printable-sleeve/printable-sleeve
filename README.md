@@ -271,4 +271,4 @@ any new parameters in the file header and in this README.
 ---
 
 This design is free. If it works for you and you'd like to support the project:
-☕ https://buymeacoffee.com/uknawn
+❤️ https://buymeacoffee.com/uknawn
