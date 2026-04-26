@@ -125,4 +125,5 @@ That is how open source works.
 
 ---
 
+This design is free. If it works for you and you'd like to support the project:
 ❤️ https://buymeacoffee.com/uknawn
